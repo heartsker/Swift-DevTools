@@ -4,22 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "DevTools",
+    name: "Swift-DevTools",
     platforms: [.iOS("16.0")],
     products: [
         .library(
-            name: "DevTools",
-            targets: ["DevTools"])
+            name: "Swift-DevTools",
+            targets: ["Swift-DevTools"])
     ],
     dependencies: [
         // Base package
     ],
     targets: [
         .target(
-            name: "DevTools",
+            name: "Swift-DevTools",
             dependencies: []),
         .testTarget(
-            name: "DevToolsTests",
-            dependencies: ["DevTools"])
+            name: "Swift-DevToolsTests",
+            dependencies: ["Swift-DevTools"])
     ]
 )
