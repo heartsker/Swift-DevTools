@@ -8,18 +8,18 @@ let package = Package(
     platforms: [.iOS("16.0")],
     products: [
         .library(
-            name: "Swift-DevTools",
-            targets: ["Swift-DevTools"])
+            name: "DevTools",
+            targets: ["DevTools"])
     ],
     dependencies: [
         // Base package
     ],
     targets: [
         .target(
-            name: "Swift-DevTools",
+            name: "DevTools",
             dependencies: []),
         .testTarget(
-            name: "Swift-DevToolsTests",
-            dependencies: ["Swift-DevTools"])
+            name: "DevToolsTests",
+            dependencies: ["DevTools"])
     ]
 )
